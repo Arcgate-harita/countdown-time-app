@@ -1,0 +1,19 @@
+.email-text {
+color: white;
+}
+
+.spam-text {
+  color: yellow;
+  margin-top: 64px;
+}
+
+  @media (max-width: 768px) {
+
+    .sub-button {
+       margin-top: 20px;
+    }
+
+    .email-field {
+        display: contents;
+    }
+  }
