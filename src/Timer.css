@@ -1,5 +1,5 @@
 .email-text {
-color: white;
+  color: white;
 }
 
 .spam-text {
@@ -7,13 +7,13 @@ color: white;
   margin-top: 64px;
 }
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
 
-    .sub-button {
-       margin-top: 20px;
-    }
-
-    .email-field {
-        display: contents;
-    }
+  .sub-button {
+    margin-top: 20px;
   }
+
+  .email-field {
+    display: contents;
+  }
+}

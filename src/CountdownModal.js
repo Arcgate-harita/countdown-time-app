@@ -21,9 +21,9 @@ const CountdownModal = ({ isOpen, onClose, onSetCountdown, selectedDateProp }) =
       <div className="modal-content">
         <h2>Set Countdown Date</h2>
         <div className="date-picker-box">
-        <i className="calendar-icon far fa-calendar-alt"></i>
+          <i className="calendar-icon far fa-calendar-alt"></i>
           <DatePicker
-          className="date-input"
+            className="date-input"
             selected={selectedDate}
             onChange={handleDateChange}
             dateFormat="yyyy-MM-dd"

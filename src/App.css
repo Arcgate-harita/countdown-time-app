@@ -11,12 +11,14 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--main-bg-color-dark);
   color: var(--main-text-color-dark);
   background-color: #1d1d1d;
 }
+
 .page {
   width: 100%;
   display: flex;
@@ -29,9 +31,11 @@ body {
 .heading {
   font-size: 45px;
 }
+
 .highlight {
   color: #7f78d2;
 }
+
 .countdown-wrapper {
   max-width: 800px;
   display: flex;
@@ -40,6 +44,7 @@ body {
   justify-content: space-around;
   margin: 40px 0;
 }
+
 .countdown-box {
   background-color: #413c69;
   font-size: 50px;
@@ -55,10 +60,12 @@ body {
   align-items: center;
   text-align: center;
 }
+
 .legend {
   font-size: 30px;
   color: #a6b1e1;
 }
+
 .wish-message {
   font-size: 30px;
   font-weight: 700;
@@ -165,7 +172,7 @@ a {
   background-color: darkred;
   color: white;
   margin: 0 !important;
-} 
+}
 
 .subscription-message {
   font-size: 16px;

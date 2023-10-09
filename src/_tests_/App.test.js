@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { MemoryRouter } from 'react-router-dom'; 
+import { MemoryRouter } from 'react-router-dom';
 
 import App from '../../src/App';
 
@@ -24,7 +24,7 @@ test('renders components', () => {
 
   const aboutElement = screen.getByTestId('about');
   expect(aboutElement).toBeInTheDocument();
-  
+
 });
 
 test('renders About component on the About route', () => {

@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './Footer.css';
 import ContactForm from './ContactForm';
 
 function Footer() {
-  const [isContactOpen, setIsContactOpen] = useState(false); 
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });

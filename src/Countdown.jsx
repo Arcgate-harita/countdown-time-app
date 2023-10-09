@@ -1,5 +1,5 @@
 import React from 'react';
- import Wish from './Wish';
+import Wish from './Wish';
 
 const Countdown = ({ countdownData, name }) => {
   if (countdownData.isItBday) {
@@ -18,7 +18,7 @@ const Countdown = ({ countdownData, name }) => {
         <Wish name={name} />
       ) : (
         <>
-        <p>Stay Tuned Our New Website is </p>
+          <p>Stay Tuned Our New Website is </p>
           <h1 className='heading'>COMING SOON!</h1>
           <div className='countdown-wrapper'>
             <div className='countdown-box'>
@@ -38,9 +38,9 @@ const Countdown = ({ countdownData, name }) => {
               <span className='legend'>Seconds</span>
             </div>
           </div>
-          
+
         </>
-         )} 
+      )}
     </div>
   );
 };

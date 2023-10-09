@@ -1,40 +1,41 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: -5px;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .nav ul {
-    list-style-type: none;
-    display: flex;
-    font-size: 1.3rem;
-    gap: 84px;
-    margin-right: 42px;
-  }
-  
-  .logo-image {
-    width: 88px;
-    margin-left: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: -5px;
+  background-color: #333;
+  color: #fff;
 }
-  .nav li {
-    cursor: pointer;
-  }
-  
-  .toggle-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    color: #fff;
-    display: none;
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 1.3rem;
+  gap: 84px;
+  margin-right: 42px;
+}
+
+.logo-image {
+  width: 88px;
+  margin-left: 21px;
+}
+
+.nav li {
+  cursor: pointer;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  display: none;
 }
 
 
@@ -62,7 +63,7 @@
 
 .error-text {
   color: red;
-  font-size: 14px; 
+  font-size: 14px;
 }
 
 .close-button {
@@ -112,47 +113,47 @@ select:focus,
   border: 1px rgb(0, 0, 0) solid;
   transition: all 0.5s;
 }
-  
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      align-items: flex-start;
-      position: relative;
-    }
-  
-    .toggle-button {
-      display: block;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
-  
-    .nav {
-      display: none;
-      background-color: #333;
-      padding: 10px;
-      width: 100%;
-      align-items: flex-start;
-      position: relative;
-    }
-  
-    .nav ul {
-        display: grid;
-        margin-top: 4px;
-    }
 
-    .open .nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: absolute; 
-      top: 80px; 
-      left: 0; 
-      width: 100%; 
-      z-index: 1; 
-    }
-  
-    .open .toggle-button {
-      color: #fff;
-    }
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
   }
+
+  .toggle-button {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .nav {
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .nav ul {
+    display: grid;
+    margin-top: 4px;
+  }
+
+  .open .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .open .toggle-button {
+    color: #fff;
+  }
+}

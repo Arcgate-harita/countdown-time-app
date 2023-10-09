@@ -10,7 +10,7 @@ import About from './About';
 function App() {
   return (
     <div className='App'>
-        <Header />
+      <Header />
       <Routes>
         <Route path='/' element={<Timer />} />
         <Route path="/" exact component={About} />

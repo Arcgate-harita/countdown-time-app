@@ -4,9 +4,9 @@ import CountdownModal from './CountdownModal';
 import "./Timer.css";
 import About from './About';
 
-const Timer = ({ name , day , month  }) => {
+const Timer = ({ name, day, month }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedDate, setSelectedDate] = useState(new Date(2023, 10, 30)); 
+  const [selectedDate, setSelectedDate] = useState(new Date(2023, 10, 30));
 
   const [countdownData, setCountdownData] = useState({
     seconds: 0,
@@ -22,7 +22,7 @@ const Timer = ({ name , day , month  }) => {
   const countdownIntervalRef = useRef(null);
 
   useEffect(() => {
-    
+
     const updateCountdown = () => {
       const currentDate = new Date();
       const timeRemaining = selectedDate - currentDate;
@@ -82,33 +82,33 @@ const Timer = ({ name , day , month  }) => {
   };
 
   return (
-<>
-        <div className='set-time' data-testid="timer">
-         <button onClick={openModal}>Set Countdown Time</button>
-      <CountdownModal
-        isOpen={isModalOpen}
-        onClose={closeModal}
-        onSetCountdown={setCountdown}
-        selectedDate={selectedDate}
-      />
-      </div>
-          <div className='page'>
-      <Countdown countdownData={countdownData} name={name} />
-      <div className='email-field'>
-        <input
-        className='email-text'
-          type='email'
-          placeholder='Enter your email'
-          value={email}
-          onChange={handleEmailChange}
+    <>
+      <div className='set-time' data-testid="timer">
+        <button onClick={openModal}>Set Countdown Time</button>
+        <CountdownModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          onSetCountdown={setCountdown}
+          selectedDate={selectedDate}
         />
-        <button onClick={subscribe} className='sub-button'>Subscribe</button>
-        <div className="subscription-message">{subscriptionMessage}</div>
-        <p className='spam-text'>*Don't Worry We Will Not Spam You :)</p>
       </div>
-     
-    </div>
-     <About />
+      <div className='page'>
+        <Countdown countdownData={countdownData} name={name} />
+        <div className='email-field'>
+          <input
+            className='email-text'
+            type='email'
+            placeholder='Enter your email'
+            value={email}
+            onChange={handleEmailChange}
+          />
+          <button onClick={subscribe} className='sub-button'>Subscribe</button>
+          <div className="subscription-message">{subscriptionMessage}</div>
+          <p className='spam-text'>*Don't Worry We Will Not Spam You :)</p>
+        </div>
+
+      </div>
+      <About />
     </>
   );
 };
